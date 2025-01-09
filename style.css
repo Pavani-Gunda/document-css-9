@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 405px;
+    height: 405px;
+}
+
+.row {
+    display: flex;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+.row1 .item:nth-child(even),
+.row2 .item:nth-child(odd),
+.row3 .item:nth-child(even),
+.row4 .item:nth-child(odd),
+.row5 .item:nth-child(even),
+.row6 .item:nth-child(odd),
+.row7 .item:nth-child(even),
+.row8 .item:nth-child(odd) {
+    background-color: grey
+}
+
+.row1 .item:nth-child(odd),
+.row2 .item:nth-child(even),
+.row3 .item:nth-child(odd),
+.row4 .item:nth-child(even),
+.row5 .item:nth-child(odd),
+.row6 .item:nth-child(even),
+.row7 .item:nth-child(odd),
+.row8 .item:nth-child(even)  {
+    background-color: whitesmoke;
+}
